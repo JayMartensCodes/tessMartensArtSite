@@ -23,3 +23,19 @@ let performancesClick = () => {
         $("#body-div").load("performances.html");
     });
 }
+function emailFunc () {
+    let emailBoy = document.querySelector("#emailText")
+    $("#emailText").fadeOut()
+    if(emailBoy.innerHTML === "tesskmartens@gmail.com") {
+      $("#emailText").promise().done(()=> {
+        emailBoy.innerHTML = "Email"
+        $("#emailText").fadeIn()
+      })
+    } else {
+      $('#emailText').promise().done(() => {
+        emailBoy.innerHTML = "tesskmartens@gmail.com"
+        $("#emailText").fadeIn()
+      })
+    }
+  }
+  
