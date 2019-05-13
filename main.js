@@ -13,11 +13,6 @@ let cvClick = () => {
         $("#body-div").load("cv.html");
     });
 }
-let connectClick = () => {
-    $(function(){
-        $("#body-div").load("connect.html");
-    });
-}
 let performancesClick = () => {
     $(function(){
         $("#body-div").load("performances.html");
