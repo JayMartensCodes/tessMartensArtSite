@@ -28,7 +28,7 @@ function emailFunc () {
     $("#emailText").fadeOut()
     if(emailBoy.innerHTML === "tesskmartens@gmail.com") {
       $("#emailText").promise().done(()=> {
-        emailBoy.innerHTML = "Email"
+        emailBoy.innerHTML = "Let's Connect!"
         $("#emailText").fadeIn()
       })
     } else {
