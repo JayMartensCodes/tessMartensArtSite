@@ -1,5 +1,5 @@
 body {
-    background-color:#ffeee2;
+    background-color: #ffeee2;
     min-height: 100 vh;
     min-width: 100 vw;
 }
@@ -10,7 +10,7 @@ body {
 
 .card {
     margin: 0 auto;
-    float: none; 
+    float: none;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -63,8 +63,47 @@ body {
 footer {
     border-top: 1px solid black;
     padding-top: 30px;
-    margin-top:100px;
+    margin-top: 100px;
     background-color: #f8f9fa;
+}
+
+.hover-test {
+    position: relative;
+}
+
+.img-test {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hover-test:hover .img-test {
+    opacity: 0.3;
+}
+
+.hover-test:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 
 .hover-color {
@@ -72,7 +111,7 @@ footer {
 }
 
 .hover-color:hover {
-    color:#d2bba0;
+    color: #d2bba0;
 }
 
 
@@ -80,21 +119,13 @@ footer {
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-
-}
+@media (min-width: 576px) {}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-
-}
+@media (min-width: 768px) {}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-
-}
+@media (min-width: 992px) {}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}
