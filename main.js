@@ -13,6 +13,11 @@ let cvClick = () => {
         $("#body-div").load("cv.html");
     });
 }
+let videosClick = () => {
+  $(function(){
+      $("#body-div").load("videos.html");
+  });
+}
 let performancesClick = () => {
     $(function(){
         $("#body-div").load("performances.html");
